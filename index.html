@@ -129,6 +129,45 @@
 			font-size: 22px;
 			color:  rgba(8, 72, 247, 0.596);
 		}
+
+		.footer__wrapper{
+			display: flex;
+         flex-wrap: wrap;
+         padding: 0 30px;
+			background-color: rgba(255, 255, 0, 0.658);
+      }
+
+		.footer__logo{
+			width: 30%;
+		}
+
+      .footer__logo-img{
+			display: block;
+			/* margin: 0 auto; */
+         width: 100px;
+         height: 100px;
+      }
+
+      .footer__menu{   
+			width: 70%;
+      }
+		.footer__menu-list{
+			display: flex;
+         flex-wrap: wrap;
+			/* padding: 40px 40px; */
+			justify-content: space-between;
+			list-style-type: none;
+		}
+
+		.footer__menu-img{
+			width: 50px;
+		}
+
+		.footer__menu-list-tel{
+			list-style-type: none;
+			font-size: 16px;
+			color: blue;
+		}
    </style>
 </head>
 <body>
@@ -193,5 +232,33 @@
 			</div>
 		</section>
 	</main>
+	<footer>
+		<div class="wrapper">
+			<div class="footer__wrapper">
+				<div class="footer__logo">
+               <img class="footer__logo-img" src="/img/png/logo.png" alt="logo us company blue planet">
+            </div>
+            <nav class="footer__menu">
+					<ul class="footer__menu-list">
+						<li>
+							<ul>
+								<li class="footer__menu-list-tel"><a href="tel.+380500007758">tel: +380500007758</a></li>
+								<li class="footer__menu-list-tel"><a href="tel.+380980007758">tel: +380980007758</a></li>
+								<li class="footer__menu-list-tel"><a href="tel.+380630007758">tel: +380630007758</a></li>
+							</ul>
+						</li>
+						<li><a class="footer__menu-links" href="#">
+							<img class="footer__menu-img" src="/img/png/facebook.png" alt="">
+						</a></li>
+						<li><a class="footer__menu-links" href="#">
+							<img class="footer__menu-img"  src="/img/png/telegram.png" alt=""></a></li>
+						<li><a class="footer__menu-links" href="#">
+							<img class="footer__menu-img"  src="/img/png/viber.png" alt=""></a></li>
+					</ul>
+				</nav>
+			</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
