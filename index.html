@@ -46,6 +46,55 @@
 			color: rgba(8, 159, 247, 0.836);
 		}
 
+		main{
+			margin: 0;
+		}
+
+		.home__title{
+			margin: 30px 0 0 0;
+			text-align: center;
+			font-size: 50px;
+			color:  rgba(8, 72, 247, 0.836);
+		}
+
+		.home__description{
+			margin: 30px 0 0 0;
+			text-align: center;
+			font-size: 22px;
+			color:  rgba(8, 72, 247, 0.596);
+		}
+
+		.form{
+			margin: 50px 0;
+			padding: 0 50px;
+		}
+		.home__send-form{
+			/* margin: 0 50px; */
+
+		}
+
+		.form__email{
+			margin-right: 15px;
+			width: 600px;
+			padding: 3px;
+			border: solid;
+			border-radius: 5px;
+			font-size: 20px;
+			font-weight: 700;
+			color:  rgba(8, 72, 247, 0.836);
+			/* background-color: rgba(255, 255, 0, 0.658); */
+		}
+
+		.form__button{
+			width: 250px;
+			padding: 3px;
+			border: solid;
+			border-radius: 5px;
+			font-size: 20px;
+			font-weight: 700;
+			color:  rgba(8, 72, 247, 0.836);
+			background-color: rgba(255, 255, 0, 0.658);
+		}
    </style>
 </head>
 <body>
@@ -65,5 +114,19 @@
 			</div>
       </div>
    </header>
+	<main>
+		<section class="home">
+			<div class="wrapper">
+				<h1 class="home__title">THE LANDING PAGE</h1>
+				<p class="home__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, minus. Sunt veniam quam eaque eligendi, asperiores provident? Ullam, officiis fugit repellendus architecto tempore libero nihil aperiam, quaerat, perferendis nesciunt excepturi?</p>
+				<div class="form">
+					<form class="home__send-form">
+						<input class="form__email" type="text" name="email"  placeholder="Enter your email">
+						<input class="form__button" type="submit" name="submit" value="Send">
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
 </body>
 </html>
