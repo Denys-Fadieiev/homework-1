@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>First website</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>First website</title>
+   <style>
+      .wrapper{
+         margin: 0 auto;
+         max-width: 1000px;
+			padding: 0 60px;
+      }
+
+      .header__wrapper {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+			background-color: rgba(255, 255, 0, 0.658);
+      }
+
+		.header__logo{
+			width: 50%;
+		}
+
+      .header__logo-img{
+         width: 150px;
+         height: 150px;
+      }
+
+      .header__menu{   
+			width: 50%;
+			font-size: 22px;
+
+      }
+		.header__menu-list{
+			display: flex;
+         flex-wrap: wrap;
+			padding: 40px 40px;
+			justify-content: space-between;
+			list-style-type: none;
+		}
+
+		.header__menu-links{
+			text-decoration: none;
+			font-weight: 700;
+			color: rgba(100, 100, 245, 0.849);
+		}
+
+   </style>
 </head>
 <body>
-	
+   <header class="header">
+      <div class="wrapper">
+         <div class="header__wrapper">
+            <div class="header__logo">
+               <img class="header__logo-img" src="/img/png/logo.png" alt="logo us company blue planet">
+            </div>
+            <nav class="header__menu">
+					<ul class="header__menu-list">
+						<li><a class="header__menu-links" href="#">Home</a></li>
+						<li><a class="header__menu-links" href="#">About</a></li>
+						<li><a class="header__menu-links" href="#">Contacts</a></li>
+					</ul>
+				</nav>
+			</div>
+      </div>
+   </header>
 </body>
 </html>
