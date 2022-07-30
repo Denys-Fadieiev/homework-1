@@ -6,7 +6,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>First website</title>
    <style>
-      .wrapper{
+      body{
+			box-sizing: border-box;
+		}
+		.wrapper{
          margin: 0 auto;
          max-width: 1000px;
 			padding: 0 60px;
@@ -95,6 +98,37 @@
 			color:  rgba(8, 72, 247, 0.836);
 			background-color: rgba(255, 255, 0, 0.658);
 		}
+
+		.part{
+			display: flex;
+			flex-wrap: wrap;
+			padding: 50px 0;
+			border-bottom: dotted 3px rgba(228, 228, 145, 0.87);
+		}
+
+		.part__logo{
+			margin: 0 auto;
+			width: 15%;
+		}
+      .part__logo-img{
+         width: 100px;
+         height: 100px;
+      }
+
+		.part__item{
+			width: 85%;
+		}
+		.part__subtitle{
+			font-size: 35px;
+			text-align: center;
+			color:  rgba(8, 72, 247, 0.836);
+		}
+		.part__description{
+			margin: 30px 0 0 0;
+			text-align: center;
+			font-size: 22px;
+			color:  rgba(8, 72, 247, 0.596);
+		}
    </style>
 </head>
 <body>
@@ -117,7 +151,7 @@
 	<main>
 		<section class="home">
 			<div class="wrapper">
-				<h1 class="home__title">THE LANDING PAGE</h1>
+				<h1 class="home__title"><i>THE LANDING PAGE</i> </h1>
 				<p class="home__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, minus. Sunt veniam quam eaque eligendi, asperiores provident? Ullam, officiis fugit repellendus architecto tempore libero nihil aperiam, quaerat, perferendis nesciunt excepturi?</p>
 				<div class="form">
 					<form class="home__send-form">
@@ -125,6 +159,37 @@
 						<input class="form__button" type="submit" name="submit" value="Send">
 					</form>
 				</div>
+			</div>
+		</section>
+		<section class="about">
+			<div class="wrapper">
+				<article class="part">
+					<div class="part__logo">
+						<img class="part__logo-img" src="/img/png/1.png" alt="planet1">
+					</div>
+					<div class="part__item">
+						<h2 class="part__subtitle"><i>Lorem ipsum dolor sit amet</i></h2>
+						<p class="part__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laborum repellat harum minima, magni eligendi est necessitatibus iure aliquid similique architecto natus molestiae obcaecati ipsam doloribus numquam voluptatibus? Saepe, a.</p>
+					</div>
+				</article>
+				<article class="part">
+					<div class="part__logo">
+						<img class="part__logo-img" src="/img/png/2.png" alt="planet1">
+					</div>
+					<div class="part__item">
+						<h2 class="part__subtitle"><i>Lorem ipsum dolor sit amet</i></h2>
+						<p class="part__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laborum repellat harum minima, magni eligendi est necessitatibus iure aliquid similique architecto natus molestiae obcaecati ipsam doloribus numquam voluptatibus? Saepe, a.</p>
+					</div>
+				</article>
+				<article class="part">
+					<div class="part__logo">
+						<img class="part__logo-img" src="/img/png/3.png" alt="planet1">
+					</div>
+					<div class="part__item">
+						<h2 class="part__subtitle"><i>Lorem ipsum dolor sit amet</i></h2>
+						<p class="part__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laborum repellat harum minima, magni eligendi est necessitatibus iure aliquid similique architecto natus molestiae obcaecati ipsam doloribus numquam voluptatibus? Saepe, a.</p>
+					</div>
+				</article>
 			</div>
 		</section>
 	</main>
